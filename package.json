@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-lw12-rgb-ledstrip",
+  "name": "homebridge-lw12-rgb-legacy",
   "version": "1.0.0",
   "description": "LW12 Wifi LED Strip Controller plugin for Homebridge (https://github.com/nfarina/homebridge)",
   "license": "MIT",
@@ -17,7 +17,7 @@
   ], 
   "repository": {
     "type": "git",
-    "url": "git@github.com:gitteric/homebridge-lw12-rgb-ledstrip.git"
+    "url": "git@github.com:gitteric/homebridge-lw12-rgb-legacy.git"
   },
   "dependencies": {
     

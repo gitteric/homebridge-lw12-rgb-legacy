@@ -10,7 +10,7 @@ module.exports = function(homebridge){
 
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
-    homebridge.registerAccessory('homebridge-lw12-rgbledstripe', 'LW12-RGB', LW12_RGB);
+    homebridge.registerAccessory('homebridge-lw12-rgb-legacy', 'LW12-RGB', LW12_RGB);
 };
 
 /**
@@ -23,7 +23,7 @@ module.exports = function(homebridge){
  */
 function LW12_RGB(log, config) {
     //create instance for one stripe to store state
-    this.stripe = require("./lw12-mod.js")(config.ip)
+    this.stripe = require("./lw12.js")(config.ip)
 
     this.log = log;
     this.name                          = config.name;
@@ -47,7 +47,7 @@ LW12_RGB.prototype = {
 
         informationService
             .setCharacteristic(Characteristic.Manufacturer, 'Lagute LW-12')
-            .setCharacteristic(Characteristic.Model, 'homebridge-lw12-rgbledstripe')
+            .setCharacteristic(Characteristic.Model, 'homebridge-lw12-rgb-legacy')
             .setCharacteristic(Characteristic.SerialNumber, 'LW-12 Serial Number');
 
         this.log('creating Lightbulb service');
