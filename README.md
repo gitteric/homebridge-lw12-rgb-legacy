@@ -6,7 +6,7 @@ Modified Version of https://github.com/alex224/homebridge-lw12-rgb-ledstrip to m
 # Installation
 
 1. Install homebridge using: npm install -g homebridge
-2. Install this plugin using: npm install -g git+https://github.com/gitteric/homebridge-lw12-rgb-legacy.git
+2. Install this plugin using: sudo npm install -g git+https://github.com/gitteric/homebridge-lw12-rgb-legacy.git
 3. Update your configuration file. See sample-config.json in this repository for a sample. 
 
 # Configuration

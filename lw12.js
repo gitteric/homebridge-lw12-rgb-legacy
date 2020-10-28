@@ -87,7 +87,7 @@ module.exports = function (host, port, debug) {
                         console.log('TCP disconnected from server');
                 });
                 client.on('error', function (error) {
-                        console.error('TCP error: ' + error);
+                        console.error('TCP error connecting to ' + module.host + ':' + module.port + ' -> ' + error);
                         client.end();
                         callback(false);
                 });
