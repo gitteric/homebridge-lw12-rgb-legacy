@@ -1,7 +1,7 @@
 # homebridge-lw12-rgb-legacy
 
 Homebridge Plugin for Lacute LW-12 Wifi LED Strip Controller (https://www.amazon.de/gp/product/B00GMAS7U2)
-Modified Version of https://github.com/alex224/homebridge-lw12-rgb-ledstrip to make it work with different lw12 (TCP API instead of UDP)
+Modified Version of https://github.com/Devil-of-Chaos/homebridge-lw12-wifi-rgb to make it work with different lw12 (TCP API instead of UDP)
 
 # Installation
 
