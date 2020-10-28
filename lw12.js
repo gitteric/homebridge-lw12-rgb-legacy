@@ -73,21 +73,21 @@ module.exports = function (host, port, debug) {
         function sendHexStringTcp(hexMessage, callback) {
                 var message = new Buffer(hexMessage, 'hex');
                 var client = net.connect({host:module.host, port: module.port}, function () {
-                        console.log('TCP connected to ' + module.host + ':' + module.port);
+                        if (module.debug === true) console.log('TCP connected to ' + module.host + ':' + module.port);
                         if (client.write(message) == true) {
-                                console.log('TCP send message ' + hexMessage);
+                                if (module.debug === true) console.log('TCP send message ' + hexMessage);
                                 callback(true);
                         }
                         else {
-                                console.log('TCP failed to send messag');
+                                if (module.debug === true) console.log('TCP failed to send messag');
                                 callback(false);
                         }
                 });
                 client.on('end', function () {
-                        console.log('TCP disconnected from server');
+                        if (module.debug === true) console.log('TCP disconnected from server');
                 });
                 client.on('error', function (error) {
-                        console.error('TCP error connecting to ' + module.host + ':' + module.port + ' -> ' + error);
+                        if (module.debug === true) console.error('TCP error connecting to ' + module.host + ':' + module.port + ' -> ' + error);
                         client.end();
                         callback(false);
                 });
