@@ -10,10 +10,10 @@
 
 	"accessories": [
 		{
-			"accessory": "lw12-rgb",
-			"port": "RGB Led Strip",
-            		"host" : "192.168.1.59",
-            		"debug": false
+            "accessory": "lw12-rgb",
+            "port": "RGB Led Strip",
+            "host" : "192.168.1.59",
+            "debug": false
 		}
 	]
 }
