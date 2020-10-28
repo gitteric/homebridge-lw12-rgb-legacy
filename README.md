@@ -16,7 +16,7 @@ Configuration sample file:
  ```
 "accessories": [
 		{
-			"accessory": "LW12-RGB",
+			"accessory": "lw12-rgb",
 			"name": "RGB Led Strip",
 			"ip" : "192.168.1.59"
 		}
