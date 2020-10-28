@@ -14,12 +14,13 @@ Modified Version of https://github.com/Devil-of-Chaos/homebridge-lw12-wifi-rgb t
 Configuration sample file:
 
  ```
-"accessories": [
+
+	"accessories": [
 		{
-			"accessory": "lw12-rgb",
-			"name": "RGB Led Strip",
-			"ip" : "192.168.1.59"
+		    "accessory": "lw12-rgb",
+		    "port": 5577,
+		    "host" : "192.168.1.59",
+		    "debug": false
 		}
-    ]
 
 ```
