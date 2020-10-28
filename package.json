@@ -11,13 +11,13 @@
     "homebridge": ">=0.2.0"
   },
   "author": {
-    "name": "Alexander Heinze"
+    "name": "gitteric"
   },
   "contributors":[
   ], 
   "repository": {
     "type": "git",
-    "url": "git@github.com:alex224/homebridge-lw12-rgb-ledstrip.git"
+    "url": "git@github.com:gitteric/homebridge-lw12-rgb-ledstrip.git"
   },
   "dependencies": {
     
